@@ -1,1 +1,2 @@
-# learn-javascript
+# Project
+Repo to study Javascript.
