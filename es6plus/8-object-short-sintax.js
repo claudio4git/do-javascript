@@ -7,4 +7,4 @@ const shortUser = {
     company: 'Company name'
 }
 
-console.log(shortUser);
+//console.log(shortUser);
