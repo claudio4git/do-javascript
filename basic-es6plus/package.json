@@ -10,6 +10,6 @@
     "@babel/preset-env": "^7.3.1"
   },
   "scripts": {
-    "dev": "babel ./1-class.js -o ./bundle.js -w"
+    "dev": "babel ./src/1-class.js -o ./public/bundle.js -w"
   }
 }
