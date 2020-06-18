@@ -1,4 +1,4 @@
-// REST
+// ----------------------------------------------------- REST
 const userRest = {
     restName: 'User name',
     restAge: 70,
@@ -24,7 +24,7 @@ function restSum(...params) {
 
 //console.log(restSum(1, 3, 5));
 
-// SPREAD
+// ----------------------------------------------------- SPREAD
 
 const spreadArr1 = [1, 2, 3];
 const spreadArr2 = [4, 5, 6];

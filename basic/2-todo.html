@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ToDo</title>
+    <title>To do</title>
 </head>
 <body>
 
@@ -20,12 +20,12 @@
 
         var todos = JSON.parse(localStorage.getItem('list_todo')) || [];
 
-        function renderTodos() {
+        function showAll() {
             listElement.innerHTML = '';
 
             todos.forEach(element => {
                 var todoElement = document.createElement('li');
-                var todoText = document.createTextNode(element);
+                var todoText = document.createTextNode(element + " ");
                 
                 var linkElement = document.createElement('a');
                 linkElement.setAttribute('href', '#');
@@ -42,21 +42,21 @@
             });
         }
 
-        renderTodos();
+        showAll();
 
         function addTodo() {
             var textTodo = inputElement.value;
             todos.push(textTodo);
             inputElement.value = '';
-            renderTodos();
+            showAll();
             saveToStorage();
         }
 
         buttonElement.onclick = addTodo;
 
         function removeTodo(pos) {
-            todos.splice(pos, 1);
-            renderTodos();
+            todos.splice(pos, 1); // remove pos a 1 item
+            showAll();
             saveToStorage();
         }
 
