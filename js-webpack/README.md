@@ -1,5 +1,5 @@
 # Project
-Project to study Javascript
+> Project to study Javascript
 
 # Tips
 
